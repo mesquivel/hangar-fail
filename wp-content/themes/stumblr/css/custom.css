@@ -1,0 +1,169 @@
+/* line 5, ../scss/custom.scss */
+.submit-button {
+  background-color: #ff9f00;
+  -webkit-border-top-left-radius: 3px;
+  -moz-border-radius-topleft: 3px;
+  border-top-left-radius: 3px;
+  -webkit-border-top-right-radius: 3px;
+  -moz-border-radius-topright: 3px;
+  border-top-right-radius: 3px;
+  -webkit-border-bottom-right-radius: 3px;
+  -moz-border-radius-bottomright: 3px;
+  border-bottom-right-radius: 3px;
+  -webkit-border-bottom-left-radius: 3px;
+  -moz-border-radius-bottomleft: 3px;
+  border-bottom-left-radius: 3px;
+  text-indent: 0px;
+  border-bottom: 10px solid #d98700;
+  display: inline-block;
+  color: #ffffff !important;
+  font-family: Arial;
+  font-size: 20px;
+  font-weight: bold;
+  font-style: normal;
+  height: 60px;
+  line-height: 56px;
+  width: 100%;
+  text-decoration: none;
+  text-align: center;
+  letter-spacing: 2px;
+  margin-bottom: 45px;
+}
+
+/* line 36, ../scss/custom.scss */
+.submit-button:hover {
+  background-color: #333;
+  border-bottom: 10px solid #2a2a2a;
+}
+
+/* line 40, ../scss/custom.scss */
+.submit-button:active {
+  position: relative;
+  top: 1px;
+}
+
+/* line 49, ../scss/custom.scss */
+#wrap #post-area {
+  width: 700px;
+  max-width: 100%;
+  padding: 0 20px;
+}
+/* line 54, ../scss/custom.scss */
+#wrap #post-area .post {
+  width: 100%;
+}
+/* line 58, ../scss/custom.scss */
+#wrap #post-area .stumblr-content {
+  margin: 0;
+  width: 100%;
+}
+/* line 63, ../scss/custom.scss */
+#wrap #post-area .stumblr-content .stumblr-image {
+  margin-left: 0;
+  text-align: center;
+  background: #F1F1F1;
+  width: 100%;
+}
+/* line 70, ../scss/custom.scss */
+#wrap #post-area .stumblr-content img {
+  max-width: 100%;
+}
+/* line 74, ../scss/custom.scss */
+#wrap #post-area .stumblr-content p {
+  margin: 20px;
+}
+/* line 77, ../scss/custom.scss */
+#wrap #post-area .stumblr-content p:first-child {
+  text-align: center;
+  padding: 20px;
+  margin: 0;
+  background-color: #F1F1F1;
+}
+/* line 85, ../scss/custom.scss */
+#wrap #post-area .stumblr-content iframe {
+  margin: 0;
+  float: none;
+  max-width: 100%;
+}
+/* line 93, ../scss/custom.scss */
+#wrap #post-area .stumblr-meta {
+  margin: 0 10px;
+  padding-top: 5px;
+}
+/* line 100, ../scss/custom.scss */
+#wrap .stumblr-title {
+  background-color: #FFF;
+}
+/* line 103, ../scss/custom.scss */
+#wrap .stumblr-title h2 {
+  font-size: 15px;
+  line-height: 2;
+  margin: 0;
+  color: #868686;
+}
+
+@media only screen and (max-width: 768px) {
+  /* line 120, ../scss/custom.scss */
+  #stumblr-sidebar {
+    display: none !important;
+  }
+
+  /* line 124, ../scss/custom.scss */
+  .stuumblr-pagination {
+    padding-left: 20px;
+  }
+
+  /* line 128, ../scss/custom.scss */
+  #wrap {
+    width: 100%;
+  }
+  /* line 132, ../scss/custom.scss */
+  #wrap #post-area {
+    width: 100%;
+  }
+  /* line 137, ../scss/custom.scss */
+  #wrap .post {
+    width: 100%;
+  }
+  /* line 140, ../scss/custom.scss */
+  #wrap .post .stumblr-content {
+    width: 80%;
+    margin: 0 auto;
+    float: none;
+    display: block;
+  }
+  /* line 147, ../scss/custom.scss */
+  #wrap .post .stumblr-meta {
+    width: 100%;
+  }
+  /* line 153, ../scss/custom.scss */
+  #wrap #copyright {
+    width: 80%;
+    float: none;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 480px) {
+  /* line 170, ../scss/custom.scss */
+  .stuumblr-pagination {
+    padding-left: 0;
+    margin-bottom: 30px;
+  }
+  /* line 173, ../scss/custom.scss */
+  .stuumblr-pagination span, .stuumblr-pagination a {
+    width: 40%;
+    text-align: center;
+    margin-left: 5%;
+  }
+
+  /* line 182, ../scss/custom.scss */
+  #comment-form {
+    width: 100%;
+  }
+  /* line 185, ../scss/custom.scss */
+  #comment-form .comment-input {
+    width: 100% !important;
+  }
+}

@@ -1,0 +1,74 @@
+// Font formatting mixin utility
+@mixin fontformat($family,$size: inherit,$margin:0,$padding:0,$color:$black,$lineheight:1,$weight:normal){
+    font-family: $family;
+    font-size: $size;
+    font-weight: $weight;
+    margin: $margin;
+    padding: $padding;
+    line-height: $lineheight;
+    color: $color;
+}
+
+
+//general purpose text-shadow
+@mixin text-shadow{
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+}
+
+//Grey header only used in styleguide
+@mixin grayHeader{
+	background-color: $softgray;
+	padding: 63px 73px;
+	font-weight: normal;
+}
+
+//background position
+@mixin bgpos($url,$repeat:no-repeat,$color:transparent,$pos:center){
+    background-image: url($url);
+    background-repeat: $repeat;
+    background-size: $pos;
+    background-position: $pos;
+}
+
+
+@mixin if-min($min) {
+  @media only screen and (min-width: #{$min}) {
+    @content;
+  }
+}
+
+@mixin if-max($max) {
+  @media only screen and (max-width: #{$max}) {
+    @content;
+  }
+}
+
+@mixin if-minmax($min, $max) {
+  @media only screen and (min-width: #{$min}) and (max-width: #{$max}) {
+    @content;
+  }
+}
+
+@mixin if-desktop {
+  @include if-min(769px) {
+    @content;
+  }
+}
+
+@mixin if-tablet-landscape {
+  @include if-max(1024px) {
+    @content;
+  }
+}
+
+@mixin if-tablet {
+  @include if-max(768px) {
+    @content;
+  }
+}
+
+@mixin if-mobile {
+  @include if-max(480px) {
+    @content;
+  }
+}
