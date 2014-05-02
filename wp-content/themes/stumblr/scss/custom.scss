@@ -1,0 +1,192 @@
+@import 'components/mixin';
+
+
+
+.submit-button {
+  
+  background-color:#ff9f00;
+  -webkit-border-top-left-radius:3px;
+  -moz-border-radius-topleft:3px;
+  border-top-left-radius:3px;
+  -webkit-border-top-right-radius:3px;
+  -moz-border-radius-topright:3px;
+  border-top-right-radius:3px;
+  -webkit-border-bottom-right-radius:3px;
+  -moz-border-radius-bottomright:3px;
+  border-bottom-right-radius:3px;
+  -webkit-border-bottom-left-radius:3px;
+  -moz-border-radius-bottomleft:3px;
+  border-bottom-left-radius:3px;
+  text-indent:0px;
+  border-bottom:10px solid #d98700;
+  display:inline-block;
+  color:#ffffff !important;
+  font-family:Arial;
+  font-size:20px;
+  font-weight:bold;
+  font-style:normal;
+  height:60px;
+  line-height:56px;
+  width:100%;
+  text-decoration:none;
+  text-align:center;
+  letter-spacing: 2px;
+  margin-bottom: 45px;
+}
+.submit-button:hover {
+  background-color:#333;
+  border-bottom:10px solid #2a2a2a;
+}
+.submit-button:active {
+  position:relative;
+  top:1px;
+}
+
+
+
+#wrap{
+  
+  #post-area{
+    width: 700px;
+    max-width: 100%;
+    padding: 0 20px;
+
+    .post{
+      width: 100%;
+    }
+
+    .stumblr-content{
+
+      margin:0;
+      width: 100%;
+
+      .stumblr-image{
+        margin-left: 0;
+        text-align: center;
+        background: #F1F1F1;
+        width: 100%;
+      }
+
+      img{
+        max-width: 100%;
+      }
+
+      p {
+        margin: 20px;
+
+        &:first-child{
+          text-align: center;
+          padding: 20px;
+          margin: 0;
+          background-color: #F1F1F1;
+        }
+
+      }
+      iframe{
+        margin: 0;
+        float: none;
+        max-width: 100%;
+      }
+
+    }
+
+    .stumblr-meta{
+      margin: 0 10px;
+      padding-top: 5px;
+    }
+
+  }
+      
+  .stumblr-title{
+    background-color: #FFF;
+    
+    h2 {
+      font-size: 15px;
+      line-height: 2;
+      margin: 0;
+      color: #868686;
+    }
+    
+  }
+
+  
+  
+}
+
+
+
+@include if-tablet {
+    
+    #stumblr-sidebar{
+        display: none !important;
+    }
+
+    .stuumblr-pagination{
+      padding-left: 20px;
+    }
+
+    #wrap{
+    
+      width: 100%;
+
+      #post-area{
+
+        width: 100%;
+      }
+
+      .post{
+        width: 100%;
+        
+        .stumblr-content{
+          width: 80%;
+          margin: 0 auto;
+          float: none;
+          display: block;
+        }
+
+        .stumblr-meta{
+          width: 100%;
+        }
+
+      }
+
+      #copyright{
+        width: 80%;
+        float: none;
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+      }
+
+
+    }
+
+
+}
+
+@include if-mobile {
+
+
+  .stuumblr-pagination{
+    padding-left: 0;
+    margin-bottom: 30px;
+     span,a {
+        width: 40%;
+        text-align: center;
+        margin-left: 5%; 
+     }
+
+  }
+
+
+  #comment-form {
+    width: 100%;
+    
+    .comment-input {
+      width: 100% !important;
+    }
+
+  }
+
+}
+
